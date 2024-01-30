@@ -1,5 +1,5 @@
 # HelloSMS.js
-A very simple module for sending SMS using Javascript and the (https://www.hellosms.se)[HelloSMS] service.
+A very simple module for sending SMS using Javascript and the [HelloSMS](https://www.hellosms.se) service.
 
 The module is written in async javascript and suitable for NodeJS or similar application. Currently written as a Common JS module but can easily be converted.
 
