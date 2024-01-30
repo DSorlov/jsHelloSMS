@@ -17,11 +17,11 @@ module.exports.SMSDispatcher = class {
         this.#Password = password;
     }
 
-    set APIPassword(value) {
+    set Password(value) {
         this.#Password = value;
     }
     
-    get APIPassword() {
+    get Password() {
         throw "Not allwoed to read password back"
     }    
 
