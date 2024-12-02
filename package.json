@@ -1,0 +1,34 @@
+{
+  "name": "hellosms",
+  "version": "2.0.0",
+  "description": "HelloSMS module for node.js et al.",
+  "main": "./hellosms.js",
+  "types": "./types.d.ts",
+  "scripts": {
+    "build:docs": "jsdoc ./hellosms.js -c jsdoc.json -t node_modules/docdash -d ./docs",
+    "build:markdown": "jsdoc2md ./hellosms.js > HelloSMS.md",
+    "build:types": "jsdoc ./hellosms.js -c jsdoc.json -t node_modules/tsd-jsdoc/dist -d ./",
+    "build": "npm run build:docs && npm run build:markdown && npm run build:types",
+    "publish": "npm publish --access public"
+  },
+  "author": "Daniel Sörlöv <daniel@sorlov.com>",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dsorlov/jsHelloSMS.git"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://buymeacoffee.com/sorlov"
+  },
+  "bugs": "https://github.com/dsorlov/jsHelloSMS/issues",
+  "devDependencies": {
+    "docdash": "^2.0.2",
+    "jsdoc": "^3.6.11",
+    "jsdoc-export-default-interop": "^0.3.1",
+    "jsdoc-to-markdown": "^9.1.1",
+    "tsd-jsdoc": "^2.5.0",
+    "typedoc": "^0.27.2"
+  }
+}

@@ -1,0 +1,47 @@
+{
+    "recurseDepth": 1,
+    "opts": {
+        "encoding": "utf8",
+        "recurse": true,
+        "readme": "README.md"        
+    },
+    "plugins": [
+        "plugins/markdown",
+        "node_modules/jsdoc-export-default-interop/dist/index"
+    ],
+    "sourceType": "module",
+    "tags": {
+        "cleverLinks": true,
+        "allowUnknownTags": true,
+        "dictionaries": ["jsdoc","closure"]
+    },
+    "docdash": {
+        "static": true,
+        "sort": true,
+        "search": true,
+        "collapse": true,
+        "typedefs": true,
+        "removeQuotes": "none",
+        "private": false,
+        "scripts": [],
+        "shortenTypes": true,
+        "menu":{
+            "Github repo": {
+                "href":"https://github.com/dsorlov/jsHelloSMS",
+                "target":"_blank",
+                "class":"menu-item",
+                "id":"repository"
+            }
+        },
+        "sectionOrder": [
+            "Modules",
+            "Classes"
+        ]
+    },
+    "templates": {
+        "default": {
+            "useLongnameInNav": false,
+            "outputSourceFiles": false
+        }
+    }
+}
